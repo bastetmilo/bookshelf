@@ -1,4 +1,7 @@
 Bookshelf::Application.routes.draw do
+  resources :authors
+
+
   resources :books
 
 
