@@ -16,8 +16,8 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :author %><br />
-    <%= f.text_field :author %>
+    <%= f.label :author_id %><br />
+    <%= f.select :author_id, Author.all.map{|a| [a.full_name, a.id]} %>
   </div>
   <div class="field">
     <%= f.label :isbn %><br />
